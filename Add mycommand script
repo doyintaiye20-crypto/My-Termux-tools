@@ -1,0 +1,25 @@
+#!/bin/bash
+clear
+RED='\e[31m'
+RESET='\e[0m'
+
+echo -e "${RED}"
+echo "██████╗  █████╗ ██████╗ ██╗  ██╗███████╗██████╗ "
+echo "██╔══██╗██╔══██╗██╔══██╗██║ ██╔╝██╔════╝██╔══██╗"
+echo "██║  ██║███████║██║  ██║█████╔╝ █████╗  ██████╔╝"
+echo "██║  ██║██╔══██║██║  ██║██╔═██╗ ██╔══╝  ██╔══██╗"
+echo "██████╔╝██║  ██║██████╔╝██║  ██╗███████╗██║  ██║"
+echo "╚═════╝ ╚═╝  ╚═╝╚═════╝ ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝"
+echo -e "${RESET}"
+
+echo -e "${RED}Created by: You${RESET}"
+echo -e "${RED}[01]${RESET} Show Banner"
+echo -e "${RED}[99]${RESET} Quit"
+echo -ne "${RED}mycommand>> ${RESET}"
+read choice
+
+case $choice in
+    01) echo -e "${RED}DARK HACKER${RESET}" ;;
+    99) exit ;;
+    *) echo "Invalid option" ;;
+esac
